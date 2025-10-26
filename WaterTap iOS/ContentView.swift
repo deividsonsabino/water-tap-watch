@@ -1,24 +1,31 @@
-//
-//  ContentView.swift
-//  WaterTap iOS
-//
-//  Created by Deividson Sabino on 25/10/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var goalStore: GoalStore
+    @State private var showEditor = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(spacing: 24) {
+                Text("Daily Goal")
+                    .font(.headline)
+
+                GoalValueText(value: goalStore.dailyGoal)
+
+                PrimaryButton(title: "Edit Goal") {
+                    showEditor = true
+                }
+            }
+            .padding()
+            .navigationTitle("WaterTap")
         }
-        .padding()
+        .sheet(isPresented: $showEditor) {
+            GoalEditorView(goalStore: goalStore)
+        }
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(GoalStore())
 }
