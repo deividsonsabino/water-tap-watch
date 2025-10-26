@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  WaterTap Watch App
+//  WaterTap iOS
 //
 //  Created by Deividson Sabino on 25/10/25.
 //

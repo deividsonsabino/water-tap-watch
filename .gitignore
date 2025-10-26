@@ -1,0 +1,75 @@
+# General macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+## Build artifacts
+build/
+DerivedData/
+*.xcarchive
+
+## User settings and state
+xcuserdata/
+*.xcuserstate
+
+## Schemes and workspace state
+*.xccheckout
+*.xcscmblueprint
+
+## Results and logs
+*.xcresult
+*.log
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Playgrounds
+playground.xcworkspace
+timeline.xctimeline
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.orig
+
+# Crash and symbol files
+*.dSYM
+*.dSYM.zip
+*.crash
+
+# Archives and exports
+*.ipa
+*.xcexport
+
+# WatchOS specific (covers legacy WatchKit artifacts too)
+# Note: Do not ignore your source under Watch/; only build outputs.
+*.appex
+*.watchkitapp
+*.watchkitextension
+
+# SwiftLint / SwiftFormat caches (optional)
+.swiftlint.cache
+.swiftformat
+
+# SPM/Xcode integration quirks
+.xcodeproj/project.xcworkspace/xcuserdata/
+
+# End of file

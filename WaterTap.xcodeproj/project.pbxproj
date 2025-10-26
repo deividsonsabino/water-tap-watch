@@ -6,20 +6,80 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		353E69302EAD95D200889741 /* WaterTap Watch App Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 353E69262EAD95D100889741 /* WaterTap Watch App Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		353E69402EAE3B9000889741 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 353E693F2EAE3B9000889741 /* README.md */; };
+		353E69422EAE3B9200889741 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 353E69412EAE3B9200889741 /* CHANGELOG.md */; };
+		353E69442EAE3B9500889741 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 353E69432EAE3B9500889741 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		353E692E2EAD95D200889741 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353E68D52EAD64D900889741 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353E69252EAD95D100889741;
+			remoteInfo = "WaterTap Watch App Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		353E69342EAD95D200889741 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				353E69302EAD95D200889741 /* WaterTap Watch App Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		353E68DD2EAD64D900889741 /* WaterTap Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaterTap Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353E68F52EAD901300889741 /* WaterTap iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaterTap iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353E69172EAD94FA00889741 /* WaterTap Watch App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = "WaterTap Watch App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353E69262EAD95D100889741 /* WaterTap Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaterTap Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		353E693F2EAE3B9000889741 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		353E69412EAE3B9200889741 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		353E69432EAE3B9500889741 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		353E68DF2EAD64D900889741 /* WaterTap Watch App */ = {
+		353E68F62EAD901300889741 /* WaterTap iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "WaterTap Watch App";
+			path = "WaterTap iOS";
+			sourceTree = "<group>";
+		};
+		353E69052EAD937B00889741 /* WaterTap Watch App Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WaterTap Watch App Extension";
+			sourceTree = "<group>";
+		};
+		353E69272EAD95D100889741 /* WaterTap Watch App  */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WaterTap Watch App ";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		353E68DA2EAD64D900889741 /* Frameworks */ = {
+		353E68F22EAD901300889741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353E69142EAD94FA00889741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353E69232EAD95D100889741 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,15 +92,22 @@
 		353E68D42EAD64D900889741 = {
 			isa = PBXGroup;
 			children = (
-				353E68DF2EAD64D900889741 /* WaterTap Watch App */,
+				353E68F62EAD901300889741 /* WaterTap iOS */,
+				353E69052EAD937B00889741 /* WaterTap Watch App Extension */,
+				353E69272EAD95D100889741 /* WaterTap Watch App  */,
 				353E68DE2EAD64D900889741 /* Products */,
+				353E693F2EAE3B9000889741 /* README.md */,
+				353E69412EAE3B9200889741 /* CHANGELOG.md */,
+				353E69432EAE3B9500889741 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
 		353E68DE2EAD64D900889741 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				353E68DD2EAD64D900889741 /* WaterTap Watch App.app */,
+				353E68F52EAD901300889741 /* WaterTap iOS.app */,
+				353E69172EAD94FA00889741 /* WaterTap Watch App Extension.appex */,
+				353E69262EAD95D100889741 /* WaterTap Watch App Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,26 +115,69 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		353E68DC2EAD64D900889741 /* WaterTap Watch App */ = {
+		353E68F42EAD901300889741 /* WaterTap iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 353E68E82EAD64DB00889741 /* Build configuration list for PBXNativeTarget "WaterTap Watch App" */;
+			buildConfigurationList = 353E68FD2EAD901400889741 /* Build configuration list for PBXNativeTarget "WaterTap iOS" */;
 			buildPhases = (
-				353E68D92EAD64D900889741 /* Sources */,
-				353E68DA2EAD64D900889741 /* Frameworks */,
-				353E68DB2EAD64D900889741 /* Resources */,
+				353E68F12EAD901300889741 /* Sources */,
+				353E68F22EAD901300889741 /* Frameworks */,
+				353E68F32EAD901300889741 /* Resources */,
+				353E69342EAD95D200889741 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				353E692F2EAD95D200889741 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				353E68F62EAD901300889741 /* WaterTap iOS */,
+			);
+			name = "WaterTap iOS";
+			packageProductDependencies = (
+			);
+			productName = "WaterTap iOS";
+			productReference = 353E68F52EAD901300889741 /* WaterTap iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		353E69162EAD94FA00889741 /* WaterTap Watch App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353E691F2EAD94FA00889741 /* Build configuration list for PBXNativeTarget "WaterTap Watch App Extension" */;
+			buildPhases = (
+				353E69132EAD94FA00889741 /* Sources */,
+				353E69142EAD94FA00889741 /* Frameworks */,
+				353E69152EAD94FA00889741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaterTap Watch App Extension";
+			packageProductDependencies = (
+			);
+			productName = "WaterTap Watch App Extension";
+			productReference = 353E69172EAD94FA00889741 /* WaterTap Watch App Extension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		353E69252EAD95D100889741 /* WaterTap Watch App Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353E69312EAD95D200889741 /* Build configuration list for PBXNativeTarget "WaterTap Watch App Watch App" */;
+			buildPhases = (
+				353E69222EAD95D100889741 /* Sources */,
+				353E69232EAD95D100889741 /* Frameworks */,
+				353E69242EAD95D100889741 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				353E68DF2EAD64D900889741 /* WaterTap Watch App */,
+				353E69272EAD95D100889741 /* WaterTap Watch App  */,
 			);
-			name = "WaterTap Watch App";
+			name = "WaterTap Watch App Watch App";
 			packageProductDependencies = (
 			);
-			productName = "WaterTap Watch App";
-			productReference = 353E68DD2EAD64D900889741 /* WaterTap Watch App.app */;
+			productName = "WaterTap Watch App Watch App";
+			productReference = 353E69262EAD95D100889741 /* WaterTap Watch App Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -80,7 +190,13 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
-					353E68DC2EAD64D900889741 = {
+					353E68F42EAD901300889741 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					353E69162EAD94FA00889741 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					353E69252EAD95D100889741 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -99,23 +215,56 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				353E68DC2EAD64D900889741 /* WaterTap Watch App */,
+				353E68F42EAD901300889741 /* WaterTap iOS */,
+				353E69162EAD94FA00889741 /* WaterTap Watch App Extension */,
+				353E69252EAD95D100889741 /* WaterTap Watch App Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		353E68DB2EAD64D900889741 /* Resources */ = {
+		353E68F32EAD901300889741 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		353E69152EAD94FA00889741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353E69242EAD95D100889741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353E69442EAE3B9500889741 /* .gitignore in Resources */,
+				353E69402EAE3B9000889741 /* README.md in Resources */,
+				353E69422EAE3B9200889741 /* CHANGELOG.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		353E68D92EAD64D900889741 /* Sources */ = {
+		353E68F12EAD901300889741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353E69132EAD94FA00889741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353E69222EAD95D100889741 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,6 +272,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		353E692F2EAD95D200889741 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 353E69252EAD95D100889741 /* WaterTap Watch App Watch App */;
+			targetProxy = 353E692E2EAD95D200889741 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		353E68E62EAD64DB00889741 /* Debug */ = {
@@ -241,25 +398,157 @@
 			};
 			name = Release;
 		};
-		353E68E92EAD64DB00889741 /* Debug */ = {
+		353E68FE2EAD901400889741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LNMF8FZ9F5;
+				DEVELOPMENT_TEAM = PNQ8W76PVG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WaterTap;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deivao.WaterTap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		353E68FF2EAD901400889741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNQ8W76PVG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deivao.WaterTap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		353E69202EAD94FA00889741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNMF8FZ9F5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WaterTap Watch App Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WaterTap Watch App Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "deivao.WaterTap-Watch-App-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		353E69212EAD94FA00889741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNMF8FZ9F5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WaterTap Watch App Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WaterTap Watch App Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "deivao.WaterTap-Watch-App-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		353E69322EAD95D200889741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PNQ8W76PVG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "WaterTap Watch App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.deivao.WaterTap.watchkitapp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deivao.WaterTap.watchkitapp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -274,25 +563,25 @@
 			};
 			name = Debug;
 		};
-		353E68EA2EAD64DB00889741 /* Release */ = {
+		353E69332EAD95D200889741 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LNMF8FZ9F5;
+				DEVELOPMENT_TEAM = PNQ8W76PVG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WaterTap;
+				INFOPLIST_KEY_CFBundleDisplayName = "WaterTap Watch App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.deivao.WaterTap.watchkitapp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deivao.WaterTap.watchkitapp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -320,11 +609,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		353E68E82EAD64DB00889741 /* Build configuration list for PBXNativeTarget "WaterTap Watch App" */ = {
+		353E68FD2EAD901400889741 /* Build configuration list for PBXNativeTarget "WaterTap iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				353E68E92EAD64DB00889741 /* Debug */,
-				353E68EA2EAD64DB00889741 /* Release */,
+				353E68FE2EAD901400889741 /* Debug */,
+				353E68FF2EAD901400889741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		353E691F2EAD94FA00889741 /* Build configuration list for PBXNativeTarget "WaterTap Watch App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353E69202EAD94FA00889741 /* Debug */,
+				353E69212EAD94FA00889741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		353E69312EAD95D200889741 /* Build configuration list for PBXNativeTarget "WaterTap Watch App Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353E69322EAD95D200889741 /* Debug */,
+				353E69332EAD95D200889741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
