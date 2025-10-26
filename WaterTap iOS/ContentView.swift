@@ -42,6 +42,7 @@ struct SurfaceCard<Content: View>: View {
 struct ContentView: View {
     @EnvironmentObject var goalStore: GoalStore
     @State private var showEditor = false
+    @State private var progress: Double = 0.6 // TODO: replace with real daily intake / goal when available
 
     var body: some View {
         NavigationStack {
@@ -61,6 +62,11 @@ struct ContentView: View {
                         VStack(alignment: .leading, spacing: DS.Spacing.l) {
                             Text("Daily Goal")
                                 .font(.headline)
+                            
+                            WaterRingView(progress: progress)
+                                .frame(height: 180)
+                                .frame(maxWidth: .infinity)
+                                .padding(.top, DS.Spacing.s)
 
                             GoalValueText(value: goalStore.dailyGoal)
 
