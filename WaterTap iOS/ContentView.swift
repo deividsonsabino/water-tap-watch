@@ -55,6 +55,11 @@ struct ContentView: View {
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
     }
     
+    private func resetIntake() {
+        intakeMl = 0
+        UINotificationFeedbackGenerator().notificationOccurred(.warning)
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -86,6 +91,22 @@ struct ContentView: View {
                                     .accessibilityLabel("Add three hundred milliliters")
                             }
                             .frame(maxWidth: .infinity)
+                            VStack(spacing: DS.Spacing.s) {
+                                Text("\(intakeMl) ml of \(goalStore.dailyGoal) ml")
+                                    .font(.headline)
+                                    .monospacedDigit()
+                                    .accessibilityLabel("You have consumed \(intakeMl) milliliters out of \(goalStore.dailyGoal)")
+
+                                Button("Reset") {
+                                    resetIntake()
+                                }
+                                .buttonStyle(.borderedProminent)
+                                .tint(.red)
+                                .disabled(intakeMl == 0)
+                                .accessibilityLabel("Reset daily intake")
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(.bottom, DS.Spacing.s)
 
                             GoalValueText(value: goalStore.dailyGoal)
 
