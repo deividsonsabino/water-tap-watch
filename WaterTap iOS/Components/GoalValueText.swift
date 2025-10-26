@@ -9,3 +9,4 @@ struct GoalValueText: View {
             .accessibilityLabel("Daily goal is \(value) milliliters")
     }
 }
+
