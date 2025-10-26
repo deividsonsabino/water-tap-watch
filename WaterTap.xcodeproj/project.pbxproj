@@ -44,9 +44,22 @@
 		353E69432EAE3B9500889741 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		35FE7A362EAE6D4E004F6094 /* Exceptions for "WaterTap iOS" folder in "WaterTap Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Shared/Components/WaterRingView.swift,
+			);
+			target = 353E69252EAD95D100889741 /* WaterTap Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		353E68F62EAD901300889741 /* WaterTap iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				35FE7A362EAE6D4E004F6094 /* Exceptions for "WaterTap iOS" folder in "WaterTap Watch App" target */,
+			);
 			path = "WaterTap iOS";
 			sourceTree = "<group>";
 		};
