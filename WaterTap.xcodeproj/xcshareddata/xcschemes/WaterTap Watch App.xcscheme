@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "353E68DC2EAD64D900889741"
+               BlueprintIdentifier = "353E69252EAD95D100889741"
                BuildableName = "WaterTap Watch App.app"
                BlueprintName = "WaterTap Watch App"
                ReferencedContainer = "container:WaterTap.xcodeproj">
@@ -53,7 +53,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "353E68DC2EAD64D900889741"
+            BlueprintIdentifier = "353E69252EAD95D100889741"
             BuildableName = "WaterTap Watch App.app"
             BlueprintName = "WaterTap Watch App"
             ReferencedContainer = "container:WaterTap.xcodeproj">
@@ -70,7 +70,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "353E68DC2EAD64D900889741"
+            BlueprintIdentifier = "353E69252EAD95D100889741"
             BuildableName = "WaterTap Watch App.app"
             BlueprintName = "WaterTap Watch App"
             ReferencedContainer = "container:WaterTap.xcodeproj">
