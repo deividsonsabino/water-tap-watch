@@ -42,8 +42,19 @@ struct SurfaceCard<Content: View>: View {
 struct ContentView: View {
     @EnvironmentObject var goalStore: GoalStore
     @State private var showEditor = false
-    @State private var progress: Double = 0.6 // TODO: replace with real daily intake / goal when available
-
+    @State private var intakeMl: Int = 0
+    
+    private var progress: Double {
+        let goal = max(1, goalStore.dailyGoal)
+        return min(1, Double(intakeMl) / Double(goal))
+    }
+    
+    private func add(_ amount: Int) {
+        let goal = max(1, goalStore.dailyGoal)
+        intakeMl = min(intakeMl + amount, goal) // não passa da meta
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -67,6 +78,14 @@ struct ContentView: View {
                                 .frame(height: 180)
                                 .frame(maxWidth: .infinity)
                                 .padding(.top, DS.Spacing.s)
+                            HStack(spacing: 12) {
+                                PrimaryButton(title: "+200 ml") { add(200) }
+                                    .accessibilityLabel("Add two hundred milliliters")
+
+                                PrimaryButton(title: "+300 ml") { add(300) }
+                                    .accessibilityLabel("Add three hundred milliliters")
+                            }
+                            .frame(maxWidth: .infinity)
 
                             GoalValueText(value: goalStore.dailyGoal)
 
