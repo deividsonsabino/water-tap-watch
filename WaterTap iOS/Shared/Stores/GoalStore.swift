@@ -1,6 +1,15 @@
 import Foundation
 import Combine
 
+// A lightweight abstraction over key-value storage to enable testing and flexibility
+public protocol KeyValueStoring {
+    func integer(forKey defaultName: String) -> Int
+    func set(_ value: Any?, forKey defaultName: String)
+}
+
+// Make UserDefaults conform to KeyValueStoring
+extension UserDefaults: KeyValueStoring {}
+
 public final class GoalStore: ObservableObject {
     private let dailyGoalKey = "dailyHydrationGoal"
     private let storage: KeyValueStoring

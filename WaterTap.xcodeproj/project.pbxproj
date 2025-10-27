@@ -52,8 +52,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Shared/Components/WaterRingView.swift,
-				Shared/Services/ConnectivityService.swift,
-				Shared/Services/Persistence.swift,
 				Shared/Stores/GoalStore.swift,
 			);
 			target = 353E69252EAD95D100889741 /* WaterTap Watch App */;
