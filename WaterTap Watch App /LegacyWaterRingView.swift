@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct WaterRingView: View {
+struct LegacyWaterRingView: View {
     let current: Double
     let goal: Double
     let animatedProgress: Double
@@ -26,5 +26,5 @@ struct WaterRingView: View {
 }
 
 #Preview {
-    WaterRingView(current: 750, goal: 2000, animatedProgress: 750)
+    LegacyWaterRingView(current: 750, goal: 2000, animatedProgress: 750)
 }
