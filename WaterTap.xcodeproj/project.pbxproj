@@ -42,11 +42,30 @@
 		353E69262EAD95D100889741 /* WaterTap Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaterTap Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		353E69412EAE3B9200889741 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		353E69432EAE3B9500889741 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		35FE7A3E2EAE999E004F6094 /* WaterTap Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WaterTap Watch App.entitlements"; sourceTree = "<group>"; };
+		35FE7A442EAEA928004F6094 /* WaterTap-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WaterTap-Watch-App-Info.plist"; sourceTree = "<group>"; };
+		35FE7A452EAEA928004F6094 /* WaterTap-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WaterTap-Watch-App-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		35FE7A3C2EAE97F2004F6094 /* Exceptions for "WaterTap iOS" folder in "WaterTap Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Shared/Components/WaterRingView.swift,
+				Shared/Services/ConnectivityService.swift,
+				Shared/Services/Persistence.swift,
+				Shared/Stores/GoalStore.swift,
+			);
+			target = 353E69252EAD95D100889741 /* WaterTap Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		353E68F62EAD901300889741 /* WaterTap iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				35FE7A3C2EAE97F2004F6094 /* Exceptions for "WaterTap iOS" folder in "WaterTap Watch App" target */,
+			);
 			path = "WaterTap iOS";
 			sourceTree = "<group>";
 		};
@@ -90,6 +109,9 @@
 		353E68D42EAD64D900889741 = {
 			isa = PBXGroup;
 			children = (
+				35FE7A452EAEA928004F6094 /* WaterTap-Watch-App-Info.plist */,
+				35FE7A442EAEA928004F6094 /* WaterTap-Watch-App-Info.plist */,
+				35FE7A3E2EAE999E004F6094 /* WaterTap Watch App.entitlements */,
 				353E68F62EAD901300889741 /* WaterTap iOS */,
 				353E69052EAD937B00889741 /* WaterTap Watch App Extension */,
 				353E69272EAD95D100889741 /* WaterTap Watch App  */,
@@ -399,11 +421,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WaterTap iOS/WaterTap iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LNMF8FZ9F5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WaterTap-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -433,11 +457,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WaterTap iOS/WaterTap iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LNMF8FZ9F5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WaterTap-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,6 +492,7 @@
 		353E69202EAD94FA00889741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WaterTap Watch App Extension/WaterTap Watch App Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LNMF8FZ9F5;
@@ -497,6 +524,7 @@
 		353E69212EAD94FA00889741 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WaterTap Watch App Extension/WaterTap Watch App Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LNMF8FZ9F5;
@@ -531,11 +559,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WaterTap Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LNMF8FZ9F5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WaterTap-Watch-App-Info.plist";
 				"INFOPLIST_FILE[sdk=*]" = "";
 				INFOPLIST_KEY_CFBundleDisplayName = "WaterTap Watch App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -566,11 +596,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WaterTap Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LNMF8FZ9F5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WaterTap-Watch-App-Info.plist";
 				"INFOPLIST_FILE[sdk=*]" = "";
 				INFOPLIST_KEY_CFBundleDisplayName = "WaterTap Watch App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

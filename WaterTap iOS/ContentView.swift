@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 // Design System (lightweight)
@@ -130,6 +129,46 @@ struct ContentView: View {
             // Fixed parameter label here
             GoalEditorView(goalStore: goalStore)
         }
+        .onChange(of: intakeMl) { newValue in
+            let goal = max(1, goalStore.dailyGoal)
+            let progress = min(1, Double(newValue) / Double(goal))
+            ConnectivityService.shared.sendProgress(percentage: progress)
+            ConnectivityService.shared.sendIntake(ml: Double(newValue))
+        }
+        .onChange(of: goalStore.dailyGoal) { _ in
+            // Reenvia progresso e ingestão quando a meta muda
+            let goal = max(1, goalStore.dailyGoal)
+            let progress = min(1, Double(intakeMl) / Double(goal))
+            ConnectivityService.shared.send(goal: goal)
+            ConnectivityService.shared.sendProgress(percentage: progress)
+            ConnectivityService.shared.sendIntake(ml: Double(intakeMl))
+        }
+        .onAppear {
+            // Ativa o serviço e envia estado inicial
+            _ = ConnectivityService.shared
+            let goal = max(1, goalStore.dailyGoal)
+            let progress = min(1, Double(intakeMl) / Double(goal))
+            ConnectivityService.shared.send(goal: goal)
+            ConnectivityService.shared.sendProgress(percentage: progress)
+            ConnectivityService.shared.sendIntake(ml: Double(intakeMl))
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .didReceiveProgressUpdate)) { note in
+            if let p = note.object as? Double, p >= 0, p <= 1 {
+                let goal = max(1, goalStore.dailyGoal)
+                let computed = Int((p * Double(goal)).rounded())
+                if computed != intakeMl {
+                    intakeMl = computed
+                }
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .didReceiveIntakeUpdate)) { note in
+            if let ml = note.object as? Double, ml >= 0 {
+                let intML = Int(ml.rounded())
+                if intML != intakeMl {
+                    intakeMl = intML
+                }
+            }
+        }
     }
 }
 
@@ -157,3 +196,4 @@ private func makePreviewStore(goal: Int = 2000) -> GoalStore {
         .environmentObject(makePreviewStore(goal: 2000))
         .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
 }
+
